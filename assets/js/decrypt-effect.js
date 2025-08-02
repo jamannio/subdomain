@@ -5,7 +5,12 @@ function createDecryptEffect(element) {
     let interval;
     let currentIndex = 0;
     
-    element.addEventListener('mouseenter', () => {
+    const mouseEnterHandler = () => {
+        // Only run in dark mode
+        const isDarkMode = !document.documentElement.hasAttribute('data-theme') || 
+                          document.documentElement.getAttribute('data-theme') !== 'light';
+        if (!isDarkMode) return;
+        
         currentIndex = 0;
         interval = setInterval(() => {
             element.textContent = originalText
@@ -25,12 +30,15 @@ function createDecryptEffect(element) {
                 element.textContent = originalText;
             }
         }, 30);
-    });
+    };
     
-    element.addEventListener('mouseleave', () => {
+    const mouseLeaveHandler = () => {
         clearInterval(interval);
         element.textContent = originalText;
-    });
+    };
+    
+    element.addEventListener('mouseenter', mouseEnterHandler);
+    element.addEventListener('mouseleave', mouseLeaveHandler);
 }
 
 // Initialize the effect on all elements with the decrypt-effect class (only in dark mode)
