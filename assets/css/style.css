@@ -163,9 +163,18 @@ nav a.active {
     transition: all 0.3s ease;
 }
 
+.theme-icon {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
 .theme-toggle:hover {
     transform: scale(1.1);
     background: var(--accent-color);
+}
+
+.theme-toggle:hover .theme-icon {
+    color: var(--bg-color);
 }
 
 /* Main content sections */
