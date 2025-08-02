@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyTheme(theme) {
         if (theme === 'light') {
             document.documentElement.setAttribute('data-theme', 'light');
-            themeIcon.textContent = '🌙';
+            themeIcon.textContent = '◑';
         } else {
             document.documentElement.removeAttribute('data-theme');
-            themeIcon.textContent = '☀️';
+            themeIcon.textContent = '◐';
         }
     }
 });
