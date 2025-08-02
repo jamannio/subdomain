@@ -33,7 +33,23 @@ function createDecryptEffect(element) {
     });
 }
 
-// Initialize the effect on all elements with the decrypt-effect class
+// Initialize the effect on all elements with the decrypt-effect class (only in dark mode)
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.decrypt-effect').forEach(createDecryptEffect);
+    const initializeDecryptEffects = () => {
+        const isDarkMode = !document.documentElement.hasAttribute('data-theme') || 
+                          document.documentElement.getAttribute('data-theme') !== 'light';
+        
+        if (isDarkMode) {
+            document.querySelectorAll('.decrypt-effect').forEach(createDecryptEffect);
+        }
+    };
+    
+    initializeDecryptEffects();
+    
+    // Re-initialize when theme changes
+    const observer = new MutationObserver(initializeDecryptEffects);
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
 });

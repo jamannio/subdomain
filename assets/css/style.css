@@ -81,12 +81,16 @@ header {
 nav {
     padding: 1em 0;
     border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 nav a {
-    margin-right: 2em;
     font-weight: bold;
     padding: 0.5em 0;
+    flex: 1;
+    text-align: center;
 }
 
 nav a.active {
@@ -197,11 +201,7 @@ footer {
 /* Disable decrypt effect in light mode */
 [data-theme="light"] .decrypt-effect {
     position: static;
-    cursor: default;
-}
-
-[data-theme="light"] .decrypt-effect:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Smooth scrolling for navigation */
