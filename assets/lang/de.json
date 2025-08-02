@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Bitcoin Beratungsdienstleistungen"
+  },
+  "nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Unabhängig. Unveränderlich. Unvermeidlich.",
+    "subtitle": "Bitcoin Beratung",
+    "description": "Direkte Bitcoin-Beratung. Kein LinkedIn-Geschwätz, nur Wissen und die Hilfe, die du brauchst. Ich helfe Privatpersonen und Unternehmen, sich durch Bitcoin-Adoption auf die monetäre Realität vorzubereiten."
+  },
+  "highlights": {
+    "adoption": "Bitcoin-Adoptionsstrategie",
+    "mining": "Mining-Betrieb Setup & Optimierung",
+    "preparation": "Vorbereitung auf Währungskollaps"
+  },
+  "services": {
+    "title": "Leistungen",
+    "strategy": {
+      "title": "Bitcoin-Strategie",
+      "description": "Direkte Beratung zur Bitcoin-Adoption. Ich helfe dir, die monetäre Landschaft zu verstehen und Bitcoin-Lösungen umzusetzen, die wirklich funktionieren."
+    },
+    "mining": {
+      "title": "Mining-Betrieb",
+      "description": "Setup und Optimierung von Mining-Operationen. Von Hardware-Auswahl bis zu operativer Effizienz - kein theoretisches Geschwätz, nur praktische Ergebnisse."
+    },
+    "technical": {
+      "title": "Technische Umsetzung",
+      "description": "Praxisnahe Bitcoin-Infrastruktur-Beratung. Sicherheit, Verwahrung, Integration - das technische Fundament, das du brauchst, um das monetäre Chaos zu überleben."
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Bitcoin-Berater mit Fokus auf praktische Umsetzung. Jahrelange Erfahrung in Mining-Operationen, technischer Infrastruktur und dabei zu helfen, Unternehmen auf die monetäre Realität vorzubereiten. Keine Unternehmens-Buzzwords - nur direkte Expertise, wenn du sie am meisten brauchst."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Bereit, dein Bitcoin-Projekt zu besprechen?",
+    "email": "E-Mail"
+  },
+  "footer": {
+    "text": "Professionelle Bitcoin-Beratungsdienstleistungen"
+  }
+}

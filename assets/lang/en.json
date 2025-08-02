@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Bitcoin Consulting Services"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Independent. Immutable. Inevitable.",
+    "subtitle": "Bitcoin Consulting",
+    "description": "Straightforward Bitcoin consulting. No LinkedIn BS, just knowledge and the help you need. I help individuals and businesses prepare for monetary reality through Bitcoin adoption."
+  },
+  "highlights": {
+    "adoption": "Bitcoin adoption strategy",
+    "mining": "Mining operations setup & optimization",
+    "preparation": "Monetary collapse preparation"
+  },
+  "services": {
+    "title": "Services",
+    "strategy": {
+      "title": "Bitcoin Strategy",
+      "description": "Direct guidance on Bitcoin adoption. I help you understand the monetary landscape and implement Bitcoin solutions that actually work."
+    },
+    "mining": {
+      "title": "Mining Operations", 
+      "description": "Setup and optimize mining operations. From hardware selection to operational efficiency - no theoretical BS, just practical results."
+    },
+    "technical": {
+      "title": "Technical Implementation",
+      "description": "Hands-on Bitcoin infrastructure consulting. Security, custody, integration - the technical foundation you need to survive monetary chaos."
+    }
+  },
+  "about": {
+    "title": "About",
+    "description": "Bitcoin consultant focused on practical implementation. Years of experience in mining operations, technical infrastructure, and helping businesses prepare for monetary reality. No corporate buzzwords - just straightforward expertise when you need it most."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Ready to discuss your Bitcoin project?",
+    "email": "Email"
+  },
+  "footer": {
+    "text": "Professional Bitcoin consulting services"
+  }
+}
