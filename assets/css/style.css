@@ -261,9 +261,15 @@ html {
         font-size: 0.9em;
     }
 
-    .theme-switcher {
+    .controls {
         top: 15px;
         right: 15px;
+    }
+
+    .language-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
     }
 
     .theme-toggle {
