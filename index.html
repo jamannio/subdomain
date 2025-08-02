@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="theme-switcher">
-        <button class="theme-toggle" aria-label="Toggle theme">
-            <span class="theme-icon">☀️</span>
-        </button>
+    <div class="controls">
+        <div class="language-switcher">
+            <button class="language-toggle" data-lang="en" aria-label="Switch to English">
+                <span class="flag">🇬🇧</span>
+            </button>
+            <button class="language-toggle" data-lang="de" aria-label="Switch to German">
+                <span class="flag">🇩🇪</span>
+            </button>
+        </div>
+        <div class="theme-switcher">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">◐</span>
+            </button>
+        </div>
     </div>
     
     <header>
@@ -77,5 +87,6 @@
 
     <script src="assets/js/theme-switcher.js"></script>
     <script src="assets/js/decrypt-effect.js"></script>
+    <script src="assets/js/language-switcher.js"></script>
 </body>
 </html>
