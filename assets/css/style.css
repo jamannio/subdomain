@@ -1,20 +1,22 @@
 /* Root variables for themes */
 :root {
-    /* Dark mode (default) */
+    /* Dark mode (default) - Hacker aesthetic */
     --bg-color: #000000;
-    --text-color: #ffffff;
-    --accent-color: #9D00FF;
-    --border-color: #9D00FF;
-    --section-bg: rgba(157, 0, 255, 0.05);
+    --text-color: #00ff00;
+    --accent-color: #00ff41;
+    --border-color: #00ff41;
+    --section-bg: rgba(0, 255, 65, 0.05);
+    --font-family: "Courier New", "Monaco", "Lucida Console", monospace;
 }
 
 [data-theme="light"] {
-    /* Light mode */
+    /* Light mode - Professional consulting */
     --bg-color: #ffffff;
-    --text-color: #000000;
-    --accent-color: #F7931A;
-    --border-color: #F7931A;
-    --section-bg: rgba(247, 147, 26, 0.05);
+    --text-color: #2c3e50;
+    --accent-color: #1a365d;
+    --border-color: #cbd5e0;
+    --section-bg: #f8fafc;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Base styles */
@@ -25,14 +27,14 @@
 }
 
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--font-family, "Courier New", Courier, monospace);
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Typography */
@@ -46,6 +48,8 @@ h2 {
     font-size: 1.8em;
     margin: 1.5em 0 0.8em 0;
     color: var(--accent-color);
+    width: 100%;
+    text-align: left;
 }
 
 h3 {
@@ -124,6 +128,7 @@ main {
 section {
     margin-bottom: 3em;
     padding: 2em 0;
+    width: 100%;
 }
 
 section:not(:last-child) {
