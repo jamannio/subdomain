@@ -1,0 +1,54 @@
+---
+layout: default
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jamannio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    {% include theme-switcher.html %}
+    
+    <header>
+        <nav>
+            <a href="index.html" class="active decrypt-effect">Home</a>
+            <a href="projects.html" class="decrypt-effect">Projects</a>
+            <a href="blog/index.html" class="decrypt-effect">Blog</a>
+            <a href="about.html" class="decrypt-effect">About</a>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Greetings, fellow human!</h1> 
+        <!-- <h1>Welcome to the Cyberspace!</h1> /// Welcome, fellow human! /// Greetings, fellow human! -->
+        <article>
+            <h2>I'm Jakob.</h2>
+            <p>This is my website. 
+                You can discover some of my doings here. <br>
+                My interests mainly revolve around Bitcoin, AI, history & economics. <br>
+                In these fast and fascinating times, I wish all of you the best. <br>
+
+                <div class="bio-list">
+                    <p>Stay focused.  </p>
+                    <p>Don't lose touch with reality. </p>
+                    <p>I hope we'll be wise</p>
+                </div>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Feel free to shoot me a <a href="mailto:jakob@jamann.io" class="decrypt-effect">mail</a>!</p>
+    </footer>
+
+    <script src="/assets/js/theme-switcher.js"></script>
+    <script src="/assets/js/decrypt-effect.js"></script>
+</body>
+</html>
