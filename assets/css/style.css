@@ -1,21 +1,21 @@
 /* Root variables for themes */
 :root {
-    /* Dark mode (default) - Hacker aesthetic */
+    /* Dark mode (default) - Black/White/Purple */
     --bg-color: #000000;
-    --text-color: #00ff00;
-    --accent-color: #00ff41;
-    --border-color: #00ff41;
-    --section-bg: rgba(0, 255, 65, 0.05);
+    --text-color: #ffffff;
+    --accent-color: #9D00FF;
+    --border-color: #9D00FF;
+    --section-bg: rgba(157, 0, 255, 0.05);
     --font-family: "Courier New", "Monaco", "Lucida Console", monospace;
 }
 
 [data-theme="light"] {
-    /* Light mode - Professional consulting */
+    /* Light mode - Bitcoin colors */
     --bg-color: #ffffff;
-    --text-color: #2c3e50;
-    --accent-color: #1a365d;
-    --border-color: #cbd5e0;
-    --section-bg: #f8fafc;
+    --text-color: #2d2d2d;
+    --accent-color: #f7931a;
+    --border-color: #e5e5e5;
+    --section-bg: #fafafa;
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -183,15 +183,25 @@ footer {
     color: var(--accent-color);
 }
 
-/* Decrypt effect styles */
-.decrypt-effect {
+/* Decrypt effect styles - only in dark mode */
+:root .decrypt-effect {
     position: relative;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.decrypt-effect:hover {
+:root .decrypt-effect:hover {
     text-decoration: none;
+}
+
+/* Disable decrypt effect in light mode */
+[data-theme="light"] .decrypt-effect {
+    position: static;
+    cursor: default;
+}
+
+[data-theme="light"] .decrypt-effect:hover {
+    text-decoration: underline;
 }
 
 /* Smooth scrolling for navigation */
