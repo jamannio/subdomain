@@ -4,7 +4,7 @@ let currentLang = 'en';
 const translations = {
     en: {
         "meta": {
-            "title": "Bitcoin Consulting Services"
+            "title": "Bitcoin Treasury Strategy"
         },
         "nav": {
             "home": "Home",
@@ -13,46 +13,46 @@ const translations = {
             "contact": "Contact"
         },
         "hero": {
-            "title": "Independent. Immutable. Inevitable.",
-            "subtitle": "Bitcoin Consulting",
-            "description": "Straightforward Bitcoin consulting. No LinkedIn BS, just knowledge and the help you need. I help individuals and businesses prepare for monetary reality through Bitcoin adoption."
+            "title": "Bitcoin Treasury Strategy",
+            "subtitle": "Inflation protection for companies.",
+            "description": "No speculation. No complexity. Only clear strategies for liquidity reserves."
         },
         "highlights": {
-            "adoption": "Bitcoin adoption strategy",
-            "mining": "Mining operations setup & optimization",
-            "preparation": "Monetary collapse preparation"
+            "adoption": "Treasury Analysis",
+            "mining": "Bitcoin Integration",
+            "preparation": "Risk Management"
         },
         "services": {
             "title": "Services",
             "strategy": {
-                "title": "Bitcoin Strategy",
-                "description": "Direct guidance on Bitcoin adoption. I help you understand the monetary landscape and implement Bitcoin solutions that actually work."
+                "title": "Treasury Analysis",
+                "description": "Assessment of your current liquidity position and inflation exposure"
             },
             "mining": {
-                "title": "Mining Operations",
-                "description": "Setup and optimize mining operations. From hardware selection to operational efficiency - no theoretical BS, just practical results."
+                "title": "Bitcoin Integration",
+                "description": "Regulatory-compliant implementation for companies"
             },
             "technical": {
-                "title": "Technical Implementation",
-                "description": "Hands-on Bitcoin infrastructure consulting. Security, custody, integration - the technical foundation you need to survive monetary chaos."
+                "title": "Risk Management",
+                "description": "Conservative allocation strategies and hedging concepts"
             }
         },
         "about": {
-            "title": "About",
-            "description": "Bitcoin consultant focused on practical implementation. Years of experience in mining operations, technical infrastructure, and helping businesses prepare for monetary reality. No corporate buzzwords - just straightforward expertise when you need it most."
+            "title": "Corporate Bitcoin Guide",
+            "description": "[Download Corporate Bitcoin Guide]"
         },
         "contact": {
             "title": "Contact",
-            "description": "Ready to discuss your Bitcoin project?",
+            "description": "",
             "email": "Email"
         },
         "footer": {
-            "text": "Professional Bitcoin consulting services"
+            "text": "jakob@jamann.io"
         }
     },
     de: {
         "meta": {
-            "title": "Bitcoin Beratungsdienstleistungen"
+            "title": "Bitcoin Treasury Strategie"
         },
         "nav": {
             "home": "Start",
@@ -61,41 +61,41 @@ const translations = {
             "contact": "Kontakt"
         },
         "hero": {
-            "title": "Unabhängig. Unveränderbar. Unaufhaltsam.",
-            "subtitle": "Bitcoin Beratung",
-            "description": "Direkte Bitcoin-Beratung. Kein LinkedIn-Geschwätz, nur Wissen und die Hilfe, die du brauchst. Ich helfe Privatpersonen und Unternehmen, sich durch Bitcoin-Adoption auf die monetäre Realität vorzubereiten."
+            "title": "Bitcoin Treasury Strategie",
+            "subtitle": "Inflationsschutz für Unternehmen.",
+            "description": "Keine Spekulationen. Keine Komplexität. Nur klare Strategien für Liquiditätsreserven."
         },
         "highlights": {
-            "adoption": "Bitcoin-Adoptionsstrategie",
-            "mining": "Mining-Betrieb Setup & Optimierung",
-            "preparation": "Vorbereitung auf Währungskollaps"
+            "adoption": "Treasury-Analyse",
+            "mining": "Bitcoin-Integration",
+            "preparation": "Risikomanagement"
         },
         "services": {
             "title": "Leistungen",
             "strategy": {
-                "title": "Bitcoin-Strategie",
-                "description": "Direkte Beratung zur Bitcoin-Adoption. Ich helfe dir, die monetäre Landschaft zu verstehen und Bitcoin-Lösungen umzusetzen, die wirklich funktionieren."
+                "title": "Treasury-Analyse",
+                "description": "Bewertung Ihrer aktuellen Liquiditätsposition und Inflationsexposition"
             },
             "mining": {
-                "title": "Mining-Betrieb",
-                "description": "Setup und Optimierung von Mining-Operationen. Von Hardware-Auswahl bis zu operativer Effizienz - kein theoretisches Geschwätz, nur praktische Ergebnisse."
+                "title": "Bitcoin-Integration",
+                "description": "BaFin-konforme Implementierung für deutsche Unternehmen"
             },
             "technical": {
-                "title": "Technische Umsetzung",
-                "description": "Praxisnahe Bitcoin-Infrastruktur-Beratung. Sicherheit, Verwahrung, Integration - das technische Fundament, das du brauchst, um das monetäre Chaos zu überleben."
+                "title": "Risikomanagement",
+                "description": "Konservative Allokationsstrategien und Absicherungskonzepte"
             }
         },
         "about": {
-            "title": "Über mich",
-            "description": "Bitcoin-Berater mit Fokus auf praktische Umsetzung. Jahrelange Erfahrung in Mining-Operationen, technischer Infrastruktur und dabei zu helfen, Unternehmen auf die monetäre Realität vorzubereiten. Keine Unternehmens-Buzzwords - nur direkte Expertise, wenn du sie am meisten brauchst."
+            "title": "Corporate Bitcoin Guide",
+            "description": "[Corporate Bitcoin Guide herunterladen]"
         },
         "contact": {
             "title": "Kontakt",
-            "description": "Bereit, dein Bitcoin-Projekt zu besprechen?",
+            "description": "",
             "email": "E-Mail"
         },
         "footer": {
-            "text": "Professionelle Bitcoin-Beratungsdienstleistungen"
+            "text": "jakob@jamann.io"
         }
     }
 };
