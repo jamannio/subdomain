@@ -1,48 +1,28 @@
 {
   "meta": {
-    "title": "Bitcoin Treasury Strategy"
+    "title": "Bitcoin Treasury"
   },
-  "nav": {
-    "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "contact": "Contact"
+  "lang": {
+    "current": "EN"
   },
   "hero": {
-    "title": "Bitcoin Treasury Strategy",
-    "subtitle": "Inflation protection for companies.",
-    "description": "No speculation. No complexity. Only clear strategies for liquidity reserves."
+    "title": "Bitcoin Treasury"
   },
-  "highlights": {
-    "adoption": "Treasury Analysis",
-    "mining": "Bitcoin Integration",
-    "preparation": "Risk Management"
+  "problem": {
+    "line1": "Companies hold cash. Cash loses value.",
+    "line2": "Bitcoin preserves value over time.",
+    "line3": "Treasury allocation requires technical competence."
   },
   "services": {
-    "title": "Services",
-    "strategy": {
-      "title": "Treasury Analysis",
-      "description": "Assessment of your current liquidity position and inflation exposure"
-    },
-    "mining": {
-      "title": "Bitcoin Integration",
-      "description": "Regulatory-compliant implementation for companies"
-    },
-    "technical": {
-      "title": "Risk Management",
-      "description": "Conservative allocation strategies and hedging concepts"
-    }
+    "analysis": "Treasury Analysis",
+    "analysis.desc": "Risk assessment and allocation strategy",
+    "implementation": "Implementation", 
+    "implementation.desc": "Custody setup and operational procedures",
+    "compliance": "Compliance",
+    "compliance.desc": "Regulatory framework and reporting"
   },
-  "about": {
-    "title": "Corporate Bitcoin Guide",
-    "description": "[Download Corporate Bitcoin Guide]"
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "",
-    "email": "Email"
-  },
-  "footer": {
-    "text": "jakob@jamann.io"
+  "links": {
+    "guide": "[Guide]",
+    "contact": "[Contact]"
   }
 }

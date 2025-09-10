@@ -1,104 +1,22 @@
-// Language switcher with embedded translations
+// Minimal language switcher for hyper-minimalist design
 let currentLang = 'en';
+let translations = {};
 
-const translations = {
-    en: {
-        "meta": {
-            "title": "Bitcoin Treasury Strategy"
-        },
-        "nav": {
-            "home": "Home",
-            "services": "Services",
-            "about": "About",
-            "contact": "Contact"
-        },
-        "hero": {
-            "title": "Bitcoin Treasury Strategy",
-            "subtitle": "Inflation protection for companies.",
-            "description": "No speculation. No complexity. Only clear strategies for liquidity reserves."
-        },
-        "highlights": {
-            "adoption": "Treasury Analysis",
-            "mining": "Bitcoin Integration",
-            "preparation": "Risk Management"
-        },
-        "services": {
-            "title": "Services",
-            "strategy": {
-                "title": "Treasury Analysis",
-                "description": "Assessment of your current liquidity position and inflation exposure"
-            },
-            "mining": {
-                "title": "Bitcoin Integration",
-                "description": "Regulatory-compliant implementation for companies"
-            },
-            "technical": {
-                "title": "Risk Management",
-                "description": "Conservative allocation strategies and hedging concepts"
-            }
-        },
-        "about": {
-            "title": "Corporate Bitcoin Guide",
-            "description": "[Download Corporate Bitcoin Guide]"
-        },
-        "contact": {
-            "title": "Contact",
-            "description": "",
-            "email": "Email"
-        },
-        "footer": {
-            "text": "jakob@jamann.io"
-        }
-    },
-    de: {
-        "meta": {
-            "title": "Bitcoin Treasury Strategie"
-        },
-        "nav": {
-            "home": "Start",
-            "services": "Leistungen",
-            "about": "Über mich",
-            "contact": "Kontakt"
-        },
-        "hero": {
-            "title": "Bitcoin Treasury Strategie",
-            "subtitle": "Inflationsschutz für Unternehmen.",
-            "description": "Keine Spekulationen. Keine Komplexität. Nur klare Strategien für Liquiditätsreserven."
-        },
-        "highlights": {
-            "adoption": "Treasury-Analyse",
-            "mining": "Bitcoin-Integration",
-            "preparation": "Risikomanagement"
-        },
-        "services": {
-            "title": "Leistungen",
-            "strategy": {
-                "title": "Treasury-Analyse",
-                "description": "Bewertung Ihrer aktuellen Liquiditätsposition und Inflationsexposition"
-            },
-            "mining": {
-                "title": "Bitcoin-Integration",
-                "description": "BaFin-konforme Implementierung für deutsche Unternehmen"
-            },
-            "technical": {
-                "title": "Risikomanagement",
-                "description": "Konservative Allokationsstrategien und Absicherungskonzepte"
-            }
-        },
-        "about": {
-            "title": "Corporate Bitcoin Guide",
-            "description": "[Corporate Bitcoin Guide herunterladen]"
-        },
-        "contact": {
-            "title": "Kontakt",
-            "description": "",
-            "email": "E-Mail"
-        },
-        "footer": {
-            "text": "jakob@jamann.io"
-        }
+// Load translations from JSON files
+async function loadTranslations() {
+    try {
+        const enResponse = await fetch('assets/lang/en.json');
+        const deResponse = await fetch('assets/lang/de.json');
+        
+        translations.en = await enResponse.json();
+        translations.de = await deResponse.json();
+        
+        return true;
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        return false;
     }
-};
+}
 
 // Apply translations to page
 function applyTranslations(lang) {
@@ -133,9 +51,6 @@ function switchLanguage() {
     // Update translations
     applyTranslations(currentLang);
     
-    // Update flag display
-    updateFlagDisplay();
-    
     // Update document language
     document.documentElement.setAttribute('lang', currentLang);
     
@@ -143,28 +58,17 @@ function switchLanguage() {
     localStorage.setItem('preferred-language', currentLang);
 }
 
-// Update flag display
-function updateFlagDisplay() {
-    const currentFlag = document.querySelector('.current-flag');
-    const nextFlag = document.querySelector('.next-flag');
+document.addEventListener('DOMContentLoaded', async () => {
+    // Load translations first
+    const loaded = await loadTranslations();
+    if (!loaded) return;
     
-    if (currentLang === 'en') {
-        currentFlag.textContent = '🇬🇧';
-        nextFlag.textContent = '🇩🇪';
-    } else {
-        currentFlag.textContent = '🇩🇪';
-        nextFlag.textContent = '🇬🇧';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
     // Get preferred language
     const savedLang = localStorage.getItem('preferred-language');
     currentLang = savedLang || document.documentElement.getAttribute('lang') || 'en';
     
     // Apply initial translations
     applyTranslations(currentLang);
-    updateFlagDisplay();
     
     // Add click listener to language toggle
     const languageToggle = document.querySelector('.language-toggle');

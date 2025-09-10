@@ -1,0 +1,13 @@
+.env
+.env.*
+*.env
+.env.local
+.env.production
+.env.development
+secrets/
+config/secrets.yaml
+private/
+*.key
+*.pem
+.git/
+node_modules/
