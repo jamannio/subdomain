@@ -9,17 +9,17 @@
     "title": "Bitcoin Treasury"
   },
   "problem": {
-    "line1": "Unternehmen halten Cash. Cash verliert Wert.",
-    "line2": "Bitcoin bewahrt Wert über Zeit.",
-    "line3": "Treasury-Allokation erfordert technische Kompetenz."
+    "line1": "Inflationsschutz für Unternehmen.",
+    "line2": "Keine Spekulationen. Keine Komplexität.",
+    "line3": "Nur klare Strategien für Liquiditätsreserven."
   },
   "services": {
     "analysis": "Treasury-Analyse",
-    "analysis.desc": "Risikobeurteilung und Allokationsstrategie",
-    "implementation": "Implementierung",
-    "implementation.desc": "Custody-Setup und operative Verfahren", 
-    "compliance": "Compliance",
-    "compliance.desc": "Regulatorischer Rahmen und Berichtswesen"
+    "analysis.desc": "Bewertung Ihrer aktuellen Liquiditätsposition und Inflationsexposition",
+    "implementation": "Bitcoin-Integration",
+    "implementation.desc": "BaFin-konforme Implementierung für deutsche Unternehmen", 
+    "compliance": "Risikomanagement",
+    "compliance.desc": "Konservative Allokationsstrategien und Absicherungskonzepte"
   },
   "links": {
     "guide": "[Guide]",
