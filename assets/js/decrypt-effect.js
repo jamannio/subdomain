@@ -7,6 +7,8 @@ function createDecryptEffect(element) {
     
     element.addEventListener('mouseenter', () => {
         currentIndex = 0;
+        const totalFrames = 1000 / 30; // 0.6s at 30ms intervals = 20 frames
+        const speed = originalText.length / totalFrames; // characters per frame
         interval = setInterval(() => {
             element.textContent = originalText
                 .split('')
@@ -18,7 +20,7 @@ function createDecryptEffect(element) {
                 })
                 .join('');
             
-            currentIndex += 1/3; // Speed of decryption
+            currentIndex += speed;
             
             if (currentIndex >= originalText.length) {
                 clearInterval(interval);
