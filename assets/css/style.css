@@ -240,6 +240,111 @@ h1 {
     text-decoration: none;
 }
 
+/* Calculator section */
+.calculator-section {
+    margin: 40px 0;
+}
+
+.calculator-section h2 {
+    font-size: 1.2rem;
+    color: var(--text-white);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.calculator-arrow {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    color: var(--text-white);
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.input-group input {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--text-white);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(var(--accent-color), 0.2);
+}
+
+.input-group input::placeholder {
+    color: var(--text-white);
+    opacity: 0.5;
+}
+
+.calculate-btn {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    align-self: center;
+    font-weight: 500;
+}
+
+.calculate-btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-black);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(var(--accent-color), 0.2);
+}
+
+.result {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.result span:first-child {
+    color: var(--text-white);
+    opacity: 0.9;
+}
+
+.loss-amount {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 /* Decrypt effect styles */
 .decrypt-effect {
     position: relative;
@@ -316,5 +421,36 @@ h1 {
     
     .contact-value {
         font-size: 0.85rem;
+    }
+    
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .calculator-section h2 {
+        font-size: 1rem;
+    }
+    
+    .calculator-arrow {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .calculator-form {
+        gap: 20px;
+    }
+    
+    .calculate-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .result {
+        font-size: 1rem;
+    }
+    
+    .loss-amount {
+        font-size: 1.1rem;
     }
 }

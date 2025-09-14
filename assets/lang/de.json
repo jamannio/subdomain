@@ -1,28 +1,36 @@
 {
   "meta": {
-    "title": "Bitcoin Treasury"
+    "title": "Bitcoin für Unternehmen"
   },
   "lang": {
     "current": "DE"
   },
   "hero": {
-    "title": "Bitcoin Treasury"
+    "title": "Bitcoin für Unternehmen"
   },
   "problem": {
-    "line1": "Inflationsschutz für Unternehmen.",
-    "line2": "Keine Spekulationen. Keine Komplexität.",
-    "line3": "Nur klare Strategien für Liquiditätsreserven."
+    "line1": "Inflation frisst 4-5% Ihrer Liquidität. Jährlich.",
+    "line2": "Bitcoin ist eine Antwort.",
+    "line3": "Technisch sauber. Rechtlich klar. Ohne Bullshit."
   },
   "services": {
-    "analysis": "Treasury-Analyse",
-    "analysis.desc": "Bewertung Ihrer aktuellen Liquiditätsposition und Inflationsexposition",
-    "implementation": "Bitcoin-Integration",
-    "implementation.desc": "BaFin-konforme Implementierung für deutsche Unternehmen", 
-    "compliance": "Risikomanagement",
-    "compliance.desc": "Konservative Allokationsstrategien und Absicherungskonzepte"
+    "analysis": "→ Die Zahlen",
+    "analysis.desc": "Was kostet Sie die Inflation wirklich?",
+    "implementation": "→ Die Strategie",
+    "implementation.desc": "Bitcoin als Teil Ihrer Liquiditätsreserve. BaFin-konform. Steueroptimiert.",
+    "compliance": "→ Die Umsetzung",
+    "compliance.desc": "Konservativ. Durchdacht. Praktikabel."
+  },
+  "calculator": {
+    "title": "Kostenloser Inflationsrechner für Ihr Unternehmen",
+    "liquidity": "Liquidität (€)",
+    "years": "Jahre",
+    "inflation": "Inflationsrate (%)",
+    "calculate": "Berechnen",
+    "result": "Ihr Verlust: "
   },
   "links": {
-    "guide": "[Guide herunterladen]",
+    "guide": "» Bitcoin in der Bilanz: Leitfaden (PDF)",
     "contact": "[Kontakt]"
   },
   "contact": {

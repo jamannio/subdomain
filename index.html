@@ -23,39 +23,68 @@
     </div>
     
     <main>
-        <h1 data-translate="hero.title">Bitcoin Treasury</h1>
+        <h1 data-translate="hero.title">Bitcoin für Unternehmen</h1>
+        
+        <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━</div>
         
         <div class="problem-statement">
-            <p data-translate="problem.line1">Companies hold cash. Cash loses value.</p>
-            <p data-translate="problem.line2">Bitcoin preserves value over time.</p>
-            <p data-translate="problem.line3">Treasury allocation requires technical competence.</p>
+            <p data-translate="problem.line1">Inflation frisst 4-5% Ihrer Liquidität. Jährlich.</p>
+            <p data-translate="problem.line2">Bitcoin ist eine Antwort.</p>
+            <p data-translate="problem.line3">Technisch sauber. Rechtlich klar. Ohne Bullshit.</p>
         </div>
         
         <div class="services">
             <div class="service">
-                <span class="service-title" data-translate="services.analysis">Treasury Analysis</span>
-                <span class="service-desc" data-translate="services.analysis.desc">Risk assessment and allocation strategy</span>
+                <span class="service-title" data-translate="services.analysis">→ Die Zahlen</span>
+                <span class="service-desc" data-translate="services.analysis.desc">Was kostet Sie die Inflation wirklich?</span>
             </div>
             <div class="service">
-                <span class="service-title" data-translate="services.implementation">Implementation</span>
-                <span class="service-desc" data-translate="services.implementation.desc">Custody setup and operational procedures</span>
+                <span class="service-title" data-translate="services.implementation">→ Die Strategie</span>
+                <span class="service-desc" data-translate="services.implementation.desc">Bitcoin als Teil Ihrer Liquiditätsreserve. BaFin-konform. Steueroptimiert.</span>
             </div>
             <div class="service">
-                <span class="service-title" data-translate="services.compliance">Compliance</span>
-                <span class="service-desc" data-translate="services.compliance.desc">Regulatory framework and reporting</span>
+                <span class="service-title" data-translate="services.compliance">→ Die Umsetzung</span>
+                <span class="service-desc" data-translate="services.compliance.desc">Konservativ. Durchdacht. Praktikabel.</span>
             </div>
         </div>
         
-        <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
-        
-        <div class="links">
-            <a href="Bitcoin-in-Bilanz-Leitfaden.pdf" download data-translate="links.guide" class="decrypt-effect">[Download Guide]</a>
+        <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━</div>
+
+        <div class="calculator-section">
+            <h2 data-translate="calculator.title">Kostenloser Inflationsrechner für Ihr Unternehmen</h2>
+            <div class="calculator-arrow">↓</div>
+            
+            <div class="calculator-form">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="liquidity" data-translate="calculator.liquidity">Liquidität (€)</label>
+                        <input type="number" id="liquidity" placeholder="1000000" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="years" data-translate="calculator.years">Jahre</label>
+                        <input type="number" id="years" placeholder="5" min="1" max="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="inflation" data-translate="calculator.inflation">Inflationsrate (%)</label>
+                        <input type="number" id="inflation" placeholder="4.5" min="0" max="20" step="0.1">
+                    </div>
+                </div>
+                <button type="button" id="calculate-btn" class="calculate-btn decrypt-effect" data-translate="calculator.calculate">Berechnen</button>
+                
+                <div class="result" id="result">
+                    <span data-translate="calculator.result">Ihr Verlust: </span>
+                    <span id="loss-amount" class="loss-amount">XXX.XXX €</span>
+                </div>
+            </div>
         </div>
 
-        <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━</div>
+
+        <div class="links">
+            <a href="Bitcoin-in-Bilanz-Leitfaden.pdf" download data-translate="links.guide" class="decrypt-effect">» Bitcoin in der Bilanz: Leitfaden (PDF)</a>
+        </div>
 
         <div class="contact-section">
-            <h2>Contact</h2>
             <div class="contact-details">
                 <div class="contact-item">
                     <span class="contact-label">Email</span>
@@ -71,6 +100,7 @@
 
     <script src="assets/js/theme-switcher.js"></script>
     <script src="assets/js/decrypt-effect.js"></script>
+    <script src="assets/js/inflation-calculator.js"></script>
     <script src="assets/js/language-switcher.js?v=2"></script>
 </body>
 </html>

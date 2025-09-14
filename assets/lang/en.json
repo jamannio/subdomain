@@ -1,28 +1,36 @@
 {
   "meta": {
-    "title": "Bitcoin Treasury"
+    "title": "Bitcoin for Companies"
   },
   "lang": {
     "current": "EN"
   },
   "hero": {
-    "title": "Bitcoin Treasury"
+    "title": "Bitcoin for Companies"
   },
   "problem": {
-    "line1": "Companies hold cash. Cash loses value.",
-    "line2": "Bitcoin preserves value over time.",
-    "line3": "Treasury allocation requires technical competence."
+    "line1": "Inflation eats 4-5% of your liquidity. Annually.",
+    "line2": "Bitcoin is an answer.",
+    "line3": "Technically sound. Legally clear. No bullshit."
   },
   "services": {
-    "analysis": "Treasury Analysis",
-    "analysis.desc": "Risk assessment and allocation strategy",
-    "implementation": "Implementation", 
-    "implementation.desc": "Custody setup and operational procedures",
-    "compliance": "Compliance",
-    "compliance.desc": "Regulatory framework and reporting"
+    "analysis": "→ The Numbers",
+    "analysis.desc": "What does inflation really cost you?",
+    "implementation": "→ The Strategy",
+    "implementation.desc": "Bitcoin as part of your liquidity reserves. Compliant. Tax-optimized.",
+    "compliance": "→ The Implementation",
+    "compliance.desc": "Conservative. Thoughtful. Practical."
+  },
+  "calculator": {
+    "title": "Free Inflation Calculator for Your Company",
+    "liquidity": "Liquidity (€)",
+    "years": "Years",
+    "inflation": "Inflation Rate (%)",
+    "calculate": "Calculate",
+    "result": "Your Loss: "
   },
   "links": {
-    "guide": "[Download Guide]",
+    "guide": "» Bitcoin on Balance Sheet: Guide (PDF)",
     "contact": "[Contact]"
   },
   "contact": {
