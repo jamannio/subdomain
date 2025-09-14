@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
+    <div class="color-switcher">
+        <div class="color-option" data-color="#9D00FF" style="background-color: #9D00FF;"></div>
+        <div class="color-option" data-color="#00FFFF" style="background-color: #00FFFF;"></div>
+        <div class="color-option" data-color="#FF3333" style="background-color: #FF3333;"></div>
+        <div class="color-option" data-color="#32CD32" style="background-color: #32CD32;"></div>
+        <div class="color-option bitcoin-option" data-color="#F7931A" style="background-color: #F7931A;">₿</div>
+    </div>
+
     <div class="language-switcher">
         <button class="language-toggle" aria-label="Switch language">
             <span class="current-lang" data-translate="lang.current">EN</span>
@@ -41,11 +49,13 @@
         <div class="divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
         
         <div class="links">
-            <a href="Bitcoin-in-Bilanz-Leitfaden.pdf" download data-translate="links.guide">[Download Guide]</a>
-            <a href="mailto:jakob@jamann.io" data-translate="links.contact">[Kontakt]</a>
+            <a href="Bitcoin-in-Bilanz-Leitfaden.pdf" download data-translate="links.guide" class="decrypt-effect">[Download Guide]</a>
+            <a href="mailto:jakob@jamann.io" data-translate="links.contact" class="decrypt-effect">[Kontakt]</a>
         </div>
     </main>
 
+    <script src="assets/js/theme-switcher.js"></script>
+    <script src="assets/js/decrypt-effect.js"></script>
     <script src="assets/js/language-switcher.js?v=2"></script>
 </body>
 </html>

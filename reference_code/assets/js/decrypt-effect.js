@@ -1,6 +1,6 @@
 function createDecryptEffect(element) {
     const originalText = element.textContent;
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()₿';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
     
     let interval;
     let currentIndex = 0;
@@ -36,4 +36,4 @@ function createDecryptEffect(element) {
 // Initialize the effect on all elements with the decrypt-effect class
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.decrypt-effect').forEach(createDecryptEffect);
-});
+}); 

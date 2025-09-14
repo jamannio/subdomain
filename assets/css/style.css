@@ -8,7 +8,8 @@
 }
 
 :root {
-    --primary-green: #00ff00;
+    --accent-color: #9D00FF;  /* Default purple */
+    --bitcoin-orange: #F7931A;
     --bg-black: #000000;
     --text-white: #ffffff;
     --border-radius: 4px;
@@ -29,18 +30,69 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Color switcher */
+.color-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--accent-color);
+    z-index: 1001;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.color-option:hover {
+    transform: scale(1.2);
+}
+
+.color-option.active {
+    border-color: #fff;
+}
+
+.bitcoin-option {
+    font-family: sans-serif;
+}
+
+.bitcoin-option.active {
+    color: white;
+    background: #F7931A;
+    transform: rotate(15deg);
+}
+
+.bitcoin-option:hover {
+    transform: scale(1.2) rotate(15deg);
+}
+
 /* Language switcher - minimal and in corner */
 .language-switcher {
     position: fixed;
-    top: 20px;
+    top: 80px;
     right: 20px;
     z-index: 1000;
 }
 
 .language-toggle {
     background: transparent;
-    border: 1px solid var(--primary-green);
-    color: var(--primary-green);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
     font-family: inherit;
     padding: 8px 12px;
     cursor: pointer;
@@ -52,7 +104,7 @@ body {
 }
 
 .language-toggle:hover {
-    background: var(--primary-green);
+    background: var(--accent-color);
     color: var(--bg-black);
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
@@ -61,7 +113,7 @@ body {
 /* Main heading */
 h1 {
     font-size: 2rem;
-    color: var(--primary-green);
+    color: var(--accent-color);
     margin-bottom: 60px;
     font-weight: 500;
     text-align: center;
@@ -93,7 +145,7 @@ h1 {
 }
 
 .service-title {
-    color: var(--primary-green);
+    color: var(--accent-color);
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
@@ -112,7 +164,7 @@ h1 {
 
 /* ASCII divider */
 .divider {
-    color: var(--primary-green);
+    color: var(--accent-color);
     margin: 80px 0;
     font-size: 0.8rem;
     letter-spacing: -1px;
@@ -127,7 +179,7 @@ h1 {
 }
 
 .links a {
-    color: var(--primary-green);
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 1rem;
     padding: 4px 8px;
@@ -137,10 +189,22 @@ h1 {
 }
 
 .links a:hover {
-    background: var(--primary-green);
+    background: var(--accent-color);
     color: var(--bg-black);
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(var(--accent-color), 0.2);
+    text-decoration: none;
+}
+
+/* Decrypt effect styles */
+.decrypt-effect {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.decrypt-effect:hover {
+    text-decoration: none;
 }
 
 /* Mobile responsiveness */
@@ -149,8 +213,20 @@ h1 {
         padding: 40px 20px;
     }
     
-    .language-switcher {
+    .color-switcher {
         top: 15px;
+        right: 15px;
+        padding: 6px;
+    }
+    
+    .color-option {
+        width: 16px;
+        height: 16px;
+        font-size: 12px;
+    }
+    
+    .language-switcher {
+        top: 65px;
         right: 15px;
     }
     
