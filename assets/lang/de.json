@@ -22,7 +22,11 @@
     "compliance.desc": "Konservative Allokationsstrategien und Absicherungskonzepte"
   },
   "links": {
-    "guide": "[Guide]",
+    "guide": "[Guide herunterladen]",
     "contact": "[Kontakt]"
+  },
+  "contact": {
+    "email": "jakob@jamann.io",
+    "phone": "+49 156 79505277"
   }
 }

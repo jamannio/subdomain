@@ -196,6 +196,38 @@ h1 {
     text-decoration: none;
 }
 
+/* Contact info section */
+.contact-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+.contact-label {
+    color: var(--text-white);
+    opacity: 0.8;
+    min-width: 50px;
+    font-weight: 300;
+}
+
+.contact-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.contact-item a:hover {
+    text-decoration: none;
+}
+
 /* Decrypt effect styles */
 .decrypt-effect {
     position: relative;
@@ -255,5 +287,18 @@ h1 {
     .links {
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .contact-info {
+        margin-top: 30px;
+    }
+    
+    .contact-item {
+        font-size: 0.85rem;
+        gap: 10px;
+    }
+    
+    .contact-label {
+        min-width: 45px;
     }
 }

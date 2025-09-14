@@ -22,7 +22,11 @@
     "compliance.desc": "Regulatory framework and reporting"
   },
   "links": {
-    "guide": "[Guide]",
+    "guide": "[Download Guide]",
     "contact": "[Contact]"
+  },
+  "contact": {
+    "email": "jakob@jamann.io",
+    "phone": "+49 156 79505277"
   }
 }
