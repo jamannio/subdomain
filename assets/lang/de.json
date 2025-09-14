@@ -22,12 +22,13 @@
     "compliance.desc": "Konservativ. Durchdacht. Praktikabel."
   },
   "calculator": {
-    "title": "Kostenloser Inflationsrechner für Ihr Unternehmen",
+    "title": "Inflationsrechner für Ihr Unternehmen",
     "liquidity": "Liquidität (€)",
     "years": "Jahre",
     "inflation": "Inflationsrate (%)",
     "calculate": "Berechnen",
-    "result": "Ihr Verlust: "
+    "loss": "Ihr Verlust: ",
+    "remaining": "Verbleibt: "
   },
   "links": {
     "guide": "» Bitcoin in der Bilanz: Leitfaden (PDF)",

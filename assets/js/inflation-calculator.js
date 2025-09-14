@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inflationInput = document.getElementById('inflation');
     const calculateBtn = document.getElementById('calculate-btn');
     const lossAmount = document.getElementById('loss-amount');
+    const remainingAmount = document.getElementById('remaining-amount');
 
     // Format number with thousand separators
     function formatCurrency(amount) {
@@ -31,11 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (liquidity <= 0 || years <= 0 || inflation < 0) {
             lossAmount.textContent = 'XXX.XXX €';
+            remainingAmount.textContent = 'XXX.XXX €';
             return;
         }
 
         const loss = calculateInflationLoss(liquidity, years, inflation);
+        const remaining = liquidity - loss;
+        
         lossAmount.textContent = formatCurrency(loss);
+        remainingAmount.textContent = formatCurrency(remaining);
     }
 
     // Event listeners

@@ -47,7 +47,7 @@
         </div>
         
         <div class="calculator-section">
-            <h2 data-translate="calculator.title">Kostenloser Inflationsrechner für Ihr Unternehmen</h2>
+            <h2 data-translate="calculator.title">Inflationsrechner für Ihr Unternehmen</h2>
             <div class="calculator-arrow">↓</div>
             
             <div class="calculator-form">
@@ -67,9 +67,15 @@
                 </div>
                 <button type="button" id="calculate-btn" class="calculate-btn decrypt-effect" data-translate="calculator.calculate">Berechnen</button>
                 
-                <div class="result" id="result">
-                    <span data-translate="calculator.result">Ihr Verlust: </span>
-                    <span id="loss-amount" class="loss-amount">XXX.XXX €</span>
+                <div class="results">
+                    <div class="result" id="loss-result">
+                        <span data-translate="calculator.loss">Ihr Verlust: </span>
+                        <span id="loss-amount" class="result-amount">XXX.XXX €</span>
+                    </div>
+                    <div class="result" id="remaining-result">
+                        <span data-translate="calculator.remaining">Verbleibt: </span>
+                        <span id="remaining-amount" class="result-amount">XXX.XXX €</span>
+                    </div>
                 </div>
             </div>
         </div>

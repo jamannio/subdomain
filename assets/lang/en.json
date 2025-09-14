@@ -22,12 +22,13 @@
     "compliance.desc": "Conservative. Thoughtful. Practical."
   },
   "calculator": {
-    "title": "Free Inflation Calculator for Your Company",
+    "title": "Inflation Calculator for Your Company",
     "liquidity": "Liquidity (€)",
     "years": "Years",
     "inflation": "Inflation Rate (%)",
     "calculate": "Calculate",
-    "result": "Your Loss: "
+    "loss": "Your Loss: ",
+    "remaining": "Remains: "
   },
   "links": {
     "guide": "» Bitcoin on Balance Sheet: Guide (PDF)",
