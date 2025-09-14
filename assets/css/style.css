@@ -135,7 +135,6 @@ h1 {
 
 /* Problem statement - three punchy lines */
 .problem-statement {
-    margin-bottom: 80px;
     position: relative;
 }
 
@@ -146,7 +145,7 @@ h1 {
     height: 1px;
     background-color: var(--accent-color);
     opacity: 0.7;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .problem-statement p {
@@ -159,7 +158,6 @@ h1 {
 
 /* Services - minimal descriptions */
 .services {
-    margin-bottom: 80px;
     position: relative;
 }
 
@@ -170,7 +168,7 @@ h1 {
     height: 1px;
     background-color: var(--accent-color);
     opacity: 0.7;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .service {
@@ -257,7 +255,7 @@ h1 {
     height: 1px;
     background-color: var(--accent-color);
     opacity: 0.7;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .contact-section h2 {
@@ -312,7 +310,7 @@ h1 {
     height: 1px;
     background-color: var(--accent-color);
     opacity: 0.7;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .calculator-section h2 {
@@ -459,20 +457,14 @@ h1 {
         margin-bottom: 40px;
     }
     
-    .problem-statement {
-        margin-bottom: 60px;
-    }
     
     .problem-statement::before {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
-    .services {
-        margin-bottom: 60px;
-    }
     
     .services::before {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .service {
@@ -498,7 +490,7 @@ h1 {
     }
     
     .contact-section::before {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .contact-section h2 {
@@ -520,7 +512,7 @@ h1 {
     }
     
     .calculator-section::before {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .calculator-section h2 {
