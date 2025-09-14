@@ -9,6 +9,7 @@
 
 :root {
     --accent-color: #9D00FF;  /* Default purple */
+    --accent-color-rgb: 157, 0, 255;  /* RGB values for transparency */
     --bitcoin-orange: #F7931A;
     --bg-black: #000000;
     --text-white: #ffffff;
@@ -239,7 +240,7 @@ h1 {
     background: var(--accent-color);
     color: var(--bg-black);
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(var(--accent-color), 0.2);
+    box-shadow: 0 2px 4px rgba(var(--accent-color-rgb), 0.2);
     text-decoration: none;
 }
 
@@ -358,7 +359,7 @@ h1 {
 .input-group input:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(var(--accent-color), 0.2);
+    box-shadow: 0 0 0 2px rgba(var(--accent-color-rgb), 0.2);
 }
 
 .input-group input::placeholder {
@@ -384,7 +385,7 @@ h1 {
     background: var(--accent-color);
     color: var(--bg-black);
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(var(--accent-color), 0.2);
+    box-shadow: 0 2px 4px rgba(var(--accent-color-rgb), 0.2);
 }
 
 .results {
