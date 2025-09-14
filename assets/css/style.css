@@ -1,18 +1,32 @@
-/* Terminal-style hyper-minimalist design */
+/* Modern terminal-style hyper-minimalist design */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --primary-green: #00ff00;
+    --bg-black: #000000;
+    --text-white: #ffffff;
+    --border-radius: 4px;
+    --transition: all 0.2s ease;
+}
+
 body {
-    font-family: "Courier New", Monaco, "Lucida Console", monospace;
-    background-color: #000000;
-    color: #ffffff;
+    font-family: "JetBrains Mono", Arial, sans-serif;
+    background-color: var(--bg-black);
+    color: var(--text-white);
     line-height: 1.8;
     max-width: 600px;
     margin: 0 auto;
     padding: 60px 40px;
+    font-feature-settings: "liga" 1, "calt" 1;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Language switcher - minimal and in corner */
@@ -25,26 +39,34 @@ body {
 
 .language-toggle {
     background: transparent;
-    border: 1px solid #00ff00;
-    color: #00ff00;
-    font-family: "Courier New", Monaco, "Lucida Console", monospace;
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+    font-family: inherit;
     padding: 8px 12px;
     cursor: pointer;
     font-size: 12px;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-feature-settings: "liga" 1, "calt" 1;
 }
 
 .language-toggle:hover {
-    background: #00ff00;
-    color: #000000;
+    background: var(--primary-green);
+    color: var(--bg-black);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
 }
 
 /* Main heading */
 h1 {
     font-size: 2rem;
-    color: #00ff00;
+    color: var(--primary-green);
     margin-bottom: 60px;
-    font-weight: normal;
+    font-weight: 500;
     text-align: center;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
 }
 
 /* Problem statement - three punchy lines */
@@ -55,7 +77,9 @@ h1 {
 .problem-statement p {
     margin-bottom: 20px;
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--text-white);
+    font-weight: 300;
+    opacity: 0.95;
 }
 
 /* Services - minimal descriptions */
@@ -69,25 +93,31 @@ h1 {
 }
 
 .service-title {
-    color: #00ff00;
+    color: var(--primary-green);
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
 }
 
 .service-desc {
-    color: #ffffff;
+    color: var(--text-white);
     display: block;
     font-size: 0.9rem;
     margin-left: 20px;
+    font-weight: 300;
+    opacity: 0.9;
 }
 
 /* ASCII divider */
 .divider {
-    color: #00ff00;
+    color: var(--primary-green);
     margin: 80px 0;
     font-size: 0.8rem;
     letter-spacing: -1px;
+    opacity: 0.7;
+    font-weight: 300;
 }
 
 /* Links - simple brackets */
@@ -97,14 +127,20 @@ h1 {
 }
 
 .links a {
-    color: #00ff00;
+    color: var(--primary-green);
     text-decoration: none;
     font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-weight: 400;
 }
 
 .links a:hover {
-    background: #00ff00;
-    color: #000000;
+    background: var(--primary-green);
+    color: var(--bg-black);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
 }
 
 /* Mobile responsiveness */
