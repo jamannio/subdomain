@@ -14,12 +14,18 @@
     "line3": "Technisch sauber. Rechtlich klar. Ohne Bullshit."
   },
   "services": {
-    "analysis": "→ Die Zahlen",
-    "analysis.desc": "Was kostet Sie die Inflation wirklich?",
-    "implementation": "→ Die Strategie",
-    "implementation.desc": "Bitcoin als Teil Ihrer Liquiditätsreserve. BaFin-konform. Steueroptimiert.",
-    "compliance": "→ Die Umsetzung",
-    "compliance.desc": "Konservativ. Durchdacht. Praktikabel."
+    "analysis": {
+      "title": "→ Die Zahlen",
+      "desc": "Was kostet Sie die Inflation wirklich?"
+    },
+    "implementation": {
+      "title": "→ Die Strategie",
+      "desc": "Bitcoin als Teil Ihrer Liquiditätsreserve. BaFin-konform. Steueroptimiert."
+    },
+    "compliance": {
+      "title": "→ Die Umsetzung", 
+      "desc": "Konservativ. Durchdacht. Praktikabel."
+    }
   },
   "calculator": {
     "title": "Inflationsrechner für Ihr Unternehmen",

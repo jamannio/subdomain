@@ -14,12 +14,18 @@
     "line3": "Technically sound. Legally clear. No bullshit."
   },
   "services": {
-    "analysis": "→ The Numbers",
-    "analysis.desc": "What does inflation really cost you?",
-    "implementation": "→ The Strategy",
-    "implementation.desc": "Bitcoin as part of your liquidity reserves. BaFin-compliant. Tax-optimized.",
-    "compliance": "→ The Implementation",
-    "compliance.desc": "Conservative. Thoughtful. Practical."
+    "analysis": {
+      "title": "→ The Numbers",
+      "desc": "What does inflation really cost you?"
+    },
+    "implementation": {
+      "title": "→ The Strategy", 
+      "desc": "Bitcoin as part of your liquidity reserves. BaFin-compliant. Tax-optimized."
+    },
+    "compliance": {
+      "title": "→ The Implementation",
+      "desc": "Conservative. Thoughtful. Practical."
+    }
   },
   "calculator": {
     "title": "Inflation Calculator for Your Company",
