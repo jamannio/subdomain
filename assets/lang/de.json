@@ -10,14 +10,14 @@
   },
   "problem": {
     "line1": "Inflation frisst 4-5% Ihrer Liquidität. Jährlich.",
-    "line2": "Es gibt eine einfache Antwort.",
-    "line3": "Technisch sauber. Rechtlich klar. Kein Bullshit."
+    "line2": "Bitcoin ist eine Antwort.",
+    "line3": "Technisch sauber. Rechtlich klar. Ohne Bullshit."
   },
   "services": {
     "analysis": "→ Die Zahlen",
     "analysis.desc": "Was kostet Sie die Inflation wirklich?",
     "implementation": "→ Die Strategie",
-    "implementation.desc": "Bitcoin als Teil Ihrer Liquiditätsreserve.",
+    "implementation.desc": "Bitcoin als Teil Ihrer Liquiditätsreserve. BaFin-konform. Steueroptimiert.",
     "compliance": "→ Die Umsetzung",
     "compliance.desc": "Konservativ. Durchdacht. Praktikabel."
   },
@@ -31,7 +31,7 @@
     "remaining": "Verbleibt: "
   },
   "links": {
-    "guide": "» Bitcoin in der Bilanz: Leitfaden (PDF)",
+    "guide": "» Bitcoin in der Bilanz: Leitfaden (PDF) «",
     "contact": "[Kontakt]"
   },
   "contact": {

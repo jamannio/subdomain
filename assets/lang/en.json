@@ -10,14 +10,14 @@
   },
   "problem": {
     "line1": "Inflation eats 4-5% of your liquidity. Annually.",
-    "line2": "There is an easy answer.",
+    "line2": "Bitcoin is an answer.",
     "line3": "Technically sound. Legally clear. No bullshit."
   },
   "services": {
     "analysis": "→ The Numbers",
     "analysis.desc": "What does inflation really cost you?",
     "implementation": "→ The Strategy",
-    "implementation.desc": "Bitcoin as part of your liquidity reserves.",
+    "implementation.desc": "Bitcoin as part of your liquidity reserves. BaFin-compliant. Tax-optimized.",
     "compliance": "→ The Implementation",
     "compliance.desc": "Conservative. Thoughtful. Practical."
   },
@@ -31,7 +31,7 @@
     "remaining": "Remains: "
   },
   "links": {
-    "guide": "» Bitcoin on Balance Sheet: Guide (PDF)",
+    "guide": "» Bitcoin on Balance Sheet: Guide (PDF) «",
     "contact": "[Contact]"
   },
   "contact": {
