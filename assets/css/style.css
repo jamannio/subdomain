@@ -8,9 +8,8 @@
 }
 
 :root {
-    --accent-color: #9D00FF;  /* Default purple */
-    --accent-color-rgb: 157, 0, 255;  /* RGB values for transparency */
-    --bitcoin-orange: #F7931A;
+    --accent-color: #ffffff;  /* White for B/W theme */
+    --accent-color-rgb: 255, 255, 255;  /* RGB values for transparency */
     --bg-black: #000000;
     --text-white: #ffffff;
     --border-radius: 4px;
@@ -31,75 +30,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Color switcher */
-.color-switcher {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 8px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid var(--accent-color);
-    z-index: 1001;
-}
-
-.color-option {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: transparent;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.color-option:hover {
-    transform: scale(1.2);
-}
-
-.color-option.active {
-    border-color: #fff;
-}
-
-.bitcoin-option {
-    font-family: sans-serif;
-}
-
-.bitcoin-option.active {
-    color: white;
-    background: #F7931A;
-    transform: rotate(15deg);
-}
-
-.bitcoin-option:hover {
-    transform: scale(1.2) rotate(15deg);
-}
 
 /* Language switcher - minimal and in corner */
 .language-switcher {
     position: fixed;
-    top: 80px;
+    top: 20px;
     right: 20px;
     z-index: 1000;
 }
 
-/* Header divider line */
-main::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    margin-bottom: 60px;
-    opacity: 0.7;
-}
 
 .language-toggle {
     background: transparent;
@@ -134,19 +73,6 @@ h1 {
 }
 
 /* Problem statement - three punchy lines */
-.problem-statement {
-    position: relative;
-}
-
-.problem-statement::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    margin-bottom: 60px;
-}
 
 .problem-statement p {
     margin-bottom: 20px;
@@ -157,19 +83,6 @@ h1 {
 }
 
 /* Services - minimal descriptions */
-.services {
-    position: relative;
-}
-
-.services::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    margin-bottom: 60px;
-}
 
 .service {
     margin-bottom: 40px;
@@ -213,16 +126,6 @@ h1 {
     position: relative;
 }
 
-.links::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-}
 
 .links a {
     color: var(--accent-color);
@@ -245,17 +148,6 @@ h1 {
 /* Contact section */
 .contact-section {
     margin-top: 40px;
-    position: relative;
-}
-
-.contact-section::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    margin-bottom: 60px;
 }
 
 .contact-section h2 {
@@ -300,17 +192,6 @@ h1 {
 /* Calculator section */
 .calculator-section {
     margin: 40px 0;
-    position: relative;
-}
-
-.calculator-section::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    margin-bottom: 60px;
 }
 
 .calculator-section h2 {
@@ -414,6 +295,15 @@ h1 {
     font-size: 1.2rem;
 }
 
+/* Separator */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+    opacity: 0.7;
+    margin: 60px 0;
+}
+
 /* Decrypt effect styles */
 .decrypt-effect {
     position: relative;
@@ -431,24 +321,10 @@ h1 {
         padding: 40px 20px;
     }
     
-    main::before {
-        margin-bottom: 40px;
-    }
     
-    .color-switcher {
-        top: 15px;
-        right: 15px;
-        padding: 6px;
-    }
-    
-    .color-option {
-        width: 16px;
-        height: 16px;
-        font-size: 12px;
-    }
     
     .language-switcher {
-        top: 65px;
+        top: 15px;
         right: 15px;
     }
     
@@ -458,14 +334,7 @@ h1 {
     }
     
     
-    .problem-statement::before {
-        margin-bottom: 40px;
-    }
     
-    
-    .services::before {
-        margin-bottom: 40px;
-    }
     
     .service {
         margin-bottom: 30px;
@@ -481,17 +350,11 @@ h1 {
         gap: 20px;
     }
     
-    .links::before {
-        top: -30px;
-    }
     
     .contact-section {
         margin-top: 30px;
     }
     
-    .contact-section::before {
-        margin-bottom: 40px;
-    }
     
     .contact-section h2 {
         font-size: 1.2rem;
@@ -511,9 +374,6 @@ h1 {
         gap: 15px;
     }
     
-    .calculator-section::before {
-        margin-bottom: 40px;
-    }
     
     .calculator-section h2 {
         font-size: 1rem;
@@ -539,5 +399,9 @@ h1 {
     
     .result-amount {
         font-size: 1.1rem;
+    }
+    
+    .separator {
+        margin: 40px 0;
     }
 }
