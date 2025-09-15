@@ -65,7 +65,6 @@ body {
 h1 {
     font-size: 2rem;
     color: var(--accent-color);
-    margin-bottom: 60px;
     font-weight: 500;
     text-align: center;
     letter-spacing: -0.02em;
@@ -107,16 +106,13 @@ h1 {
     opacity: 0.9;
 }
 
-/* ASCII divider */
-.divider {
-    color: var(--accent-color);
-    margin: 80px 0;
-    font-size: 0.8rem;
-    letter-spacing: -1px;
-    opacity: 0.7;
-    font-weight: 300;
-    overflow: hidden;
-    white-space: nowrap;
+/* Separator */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+    opacity: 0.3;
+    margin: 60px 0;
 }
 
 /* Links - simple brackets */
@@ -146,9 +142,6 @@ h1 {
 }
 
 /* Contact section */
-.contact-section {
-    margin-top: 40px;
-}
 
 .contact-section h2 {
     font-size: 1.5rem;
@@ -190,9 +183,6 @@ h1 {
 }
 
 /* Calculator section */
-.calculator-section {
-    margin: 40px 0;
-}
 
 .calculator-section h2 {
     font-size: 1.2rem;
@@ -295,14 +285,6 @@ h1 {
     font-size: 1.2rem;
 }
 
-/* Separator */
-.separator {
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    margin: 60px 0;
-}
 
 /* Decrypt effect styles */
 .decrypt-effect {
@@ -330,7 +312,6 @@ h1 {
     
     h1 {
         font-size: 1.5rem;
-        margin-bottom: 40px;
     }
     
     
@@ -340,10 +321,6 @@ h1 {
         margin-bottom: 30px;
     }
     
-    .divider {
-        margin: 60px 0;
-        font-size: 0.7rem;
-    }
     
     .links {
         flex-direction: column;
@@ -351,9 +328,6 @@ h1 {
     }
     
     
-    .contact-section {
-        margin-top: 30px;
-    }
     
     
     .contact-section h2 {
